@@ -232,7 +232,7 @@ QString StudentWindow::getCurrentWifiSSID()
 // Проверяет, разрешена ли сеть
 bool StudentWindow::checkAllowedWifiSSID(const QString &ssid)
 {
-    // Пример: список разрешенных сетей (лучше хранить в БД)
+    // список разрешенных сетей
     QStringList allowedNetworks = {"HUAWEI-4PyQ","ITAS"};
 
     return allowedNetworks.contains(ssid, Qt::CaseInsensitive);
